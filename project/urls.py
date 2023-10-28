@@ -24,6 +24,6 @@ from rest_framework.routers import SimpleRouter
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
+    path('users', UserSet.as_view({'get':'list'}))
     
 ]
